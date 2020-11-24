@@ -1,0 +1,34 @@
+{
+  "name": "react-ts",
+  "version": "1.0.0",
+  "description": "react component",
+  "main": "index.js",
+  "scripts": {
+    "test": "tsc index.ts",
+    "create_tsconfig": "tsc --init"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/summerSunndy/react-ts.git"
+  },
+  "keywords": [
+    "react",
+    "component"
+  ],
+  "author": "mengyue",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/summerSunndy/react-ts/issues"
+  },
+  "homepage": "https://github.com/summerSunndy/react-ts#readme",
+  "dependencies": {
+    "react": "^17.0.1"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.8.1",
+    "@typescript-eslint/parser": "^4.8.1",
+    "eslint": "^7.13.0",
+    "eslint-plugin-react": "^7.21.5",
+    "typescript": "^4.1.2"
+  }
+}
