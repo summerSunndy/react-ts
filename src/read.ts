@@ -294,8 +294,18 @@ type _Pick<T, K extends keyof T> = {
 }
 
 //对接口、对象、类的属性只用部分或强制全部，Readonly, Record, Exclude, Extract, Omit, NonNullable, Parameters, ConstructorParameters, ReturnType, InstanceType
-type P = Partial<Bird>
+type P = Partial<Bird> // 属性变为可选
 type Pi = Pick<Bird, 'legs'>
-type All = Required<Bird>
+type All = Required<Bird> // 必填
+
+// Exclude<T, U>
+// Extract<T, U> 提取可以赋值给U的类型
+// Record<K, T>将K中所有属性值转为T类型
+// Omit<T, K> T中排除key是K的属性
+// NonNullable<T>
+// type UserInfo = RenturnType<typeof FunName> 获取函数返回值类型
+// type ClassInfo = InstanceType<typeof ClassName> 获取函数返回值类型
 
 // 类作为类型？接口作为类型？接口的实现？
+
+// unknown
